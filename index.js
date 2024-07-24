@@ -20,6 +20,9 @@ function addBurgerToBurgerList(burger){
 
     const imageElement = document.createElement("img")
     imageElement.src = burger.image
+    imageElement.addEventListener('click', () =>{
+        displayBurgerDetails(burger)
+    })
 
     const priceElment = document.createElement("h3")
     priceElment.textContent = burger.price
@@ -31,4 +34,16 @@ function addBurgerToBurgerList(burger){
     
     console.log(listElement)
     burgersList.appendChild(listElement)
+}
+
+function displayBurgerDetails(burger){
+    console.log(burger)
+    const burgerIdElement = document.getElementById('burger-id')
+    burgerIdElement.textContent = burger.id
+
+    const burgerNameElement = document.getElementById('burger-name')
+    burgerNameElement.textContent = `Burger Name: ${burger.name}`
+
+    const burgerImageElement = document.getElementById('burger-image')
+    burgerImageElement.src = burger.image
 }
