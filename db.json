@@ -1,0 +1,10 @@
+{
+    "burgers": [
+        {
+            "id":1,
+            "name": "Flatburger",
+            "image": "https://media.istockphoto.com/id/182744943/photo/burger.jpg",
+            "price": 12.99
+        }
+    ]
+}
