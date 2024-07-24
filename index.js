@@ -39,7 +39,7 @@ function addBurgerToBurgerList(burger){
 function displayBurgerDetails(burger){
     console.log(burger)
     const burgerIdElement = document.getElementById('burger-id')
-    burgerIdElement.textContent = burger.id
+    burgerIdElement.textContent = `Burger Number: ${burger.id}`
 
     const burgerNameElement = document.getElementById('burger-name')
     burgerNameElement.textContent = `Burger Name: ${burger.name}`
